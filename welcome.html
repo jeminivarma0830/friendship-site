@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome 💖</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body class="fade-in">
+
+<div class="center">
+    <h1>Hey... 💕</h1>
+    <p>I have something special for you...</p>
+
+    <a href="/message">
+        <button>Start 💌</button>
+    </a>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+<div class="hearts"></div>
+
+<div class="center">
+    <h1>Hey... 💕</h1>
+    <p>I have something special for you...</p>
+
+    <!-- 💌 ADD HERE -->
+    <input type="text" id="username" placeholder="Enter your name 💖">
+
+    <button onclick="saveName()">Start 💌</button>
+</div>
+<h1 id="welcomeText">Hey My Dear... 💕</h1>
+
+</body>
+</html>

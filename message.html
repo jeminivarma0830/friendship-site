@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Message 💌</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body class="fade-in">
+
+<div class="center">
+    <h1 id="typing"></h1>
+
+    <img src="{{ url_for('static', filename='images/photo.jpg') }}" class="photo">
+
+    <p>
+        You are one of the most important people in my life 💖<br><br>
+        You make everything better 🌸
+    </p>
+
+    <a href="/proposal">
+        <button>Next 💕</button>
+    </a>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+<div class="hearts"></div>
+<div class="center">
+    <h1>Hey... 💕</h1>
+    <p>I have something special for you...</p>
+
+    <!-- 💌 ADD HERE -->
+    <input type="text" id="username" placeholder="Enter your name 💖">
+
+    <button onclick="saveName()">Start 💌</button>
+</div>
+<h1 id="let message = [
+    "Hey " + name + " 💖",
+    "I wanted to tell you something...",
+    "You make my days better 🌸",
+    "And my life happier 💕",
+    "So I have a question for you... 🥺"
+];"></h1>
+<textarea id="memory" placeholder="Write a memory 💭"></textarea>
+<button onclick="saveMemory()">Save Memory 💾</button>
+</body>
+</html>

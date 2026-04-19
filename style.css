@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    text-align: center;
+    color: white;
+
+    background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #ffdde1, #fccb90);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+    0% {background-position: 0%;}
+    50% {background-position: 100%;}
+    100% {background-position: 0%;}
+}
+.hearts::before {
+    content: "💖 💕 💗 💓 💞";
+    position: absolute;
+    width: 100%;
+    animation: float 6s linear infinite;
+}
+
+@keyframes float {
+    0% {transform: translateY(100vh);}
+    100% {transform: translateY(-100vh);}
+}
+.fade-out {
+    opacity: 0;
+    transition: 0.5s;
+}
+textarea {
+    width: 250px;
+    height: 100px;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Proposal 💖</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body class="fade-in">
+
+<div class="center">
+
+    <h1>Will you be my Best Friend forever? 🥺💖</h1>
+
+    <button onclick="yesClicked()">YES 💖</button>
+    <button id="noBtn" onmouseover="moveButton()">NO 😢</button>
+
+</div>
+
+<audio id="bg-music" loop>
+    <source src="{{ url_for('static', filename='music/song.mp3') }}" type="audio/mp3">
+</audio>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+<div class="hearts"></div>
+<audio id="bg-music" loop>
+    <source src="{{ url_for('static', filename='music/song.mp3') }}">
+</audio>
+
+<button onclick="toggleMusic()">🎵 Music</button>
+<div class="center">
+    <h1>Hey... 💕</h1>
+    <p>I have something special for you...</p>
+
+    <!-- 💌 ADD HERE -->
+    <input type="text" id="username" placeholder="Enter your name 💖">
+
+    <button onclick="saveName()">Start 💌</button>
+</div>
+<h1 id="Will you be my Best Friend forever? 🥺💖"></h1>
+<p id="memoryDisplay"></p>
+<audio id="bg-music" loop>
+    <source src="{{ url_for('static', filename='music/song.mp3') }}" type="audio/mp3">
+</audio>
+
+<button onclick="playMusic()">🎵 Play Music</button>
+
+</body>
+</html>
